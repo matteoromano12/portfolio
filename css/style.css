@@ -30,6 +30,7 @@ body {
     gap: 4px;
     cursor: pointer;
     padding: 4px;
+    transition: gap 0.2s;
 }
 
 .isola-hamburger span {
@@ -38,6 +39,8 @@ body {
     height: 2px;
     background: #111;
     border-radius: 1px;
+    transition: transform 0.2s, opacity 0.2s;
+    transform-origin: center;
 }
 
 .isola-nome {
@@ -45,4 +48,55 @@ body {
     font-size: 25px;
     letter-spacing: 0.08em;
     color: #111;
+}
+
+.menu-dropdown {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+    width: 90%;
+    max-width: 660px;
+    margin: 0.5rem auto 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.menu-dropdown.aperto {
+    max-height: 400px;
+    padding: 1rem 1.5rem;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+}
+
+.menu-dropdown ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    font-family: 'Silkscreen', monospace;
+    font-size: 14px;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 0.5px solid rgba(0,0,0,0.08);
+}
+
+.menu-dropdown ul li:last-child a {
+    border-bottom: none;
+}
+
+.menu-dropdown ul li a:hover {
+    color: #555;
+}
+
+.isola-hamburger.aperto {
+    gap: 0;
+}
+
+.isola-hamburger.aperto span:first-child {
+    transform: rotate(45deg) translateY(1px);
+}
+
+.isola-hamburger.aperto span:last-child {
+    transform: rotate(-45deg) translateY(-1px);
 }
