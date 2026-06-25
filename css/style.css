@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+body {
+    position: relative;
+}
 
 .isola {
+    position: relative;
+    z-index: 10;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 24px rgba(0,0,0,0.08);
