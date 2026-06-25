@@ -4,13 +4,8 @@
     padding: 0;
 }
 
-body {
-    position: relative;
-}
 
 .isola {
-    position: relative;
-    z-index: 5;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 24px rgba(0,0,0,0.08);
@@ -41,6 +36,18 @@ body {
     border-radius: 1px;
     transition: transform 0.2s, opacity 0.2s;
     transform-origin: center;
+}
+
+.isola-hamburger.aperto {
+    gap: 0;
+}
+
+.isola-hamburger.aperto span:first-child {
+    transform: rotate(45deg) translateY(1px);
+}
+
+.isola-hamburger.aperto span:last-child {
+    transform: rotate(-45deg) translateY(-1px);
 }
 
 .isola-nome {
@@ -87,16 +94,4 @@ body {
 
 .menu-dropdown ul li a:hover {
     color: #555;
-}
-
-.isola-hamburger.aperto {
-    gap: 0;
-}
-
-.isola-hamburger.aperto span:first-child {
-    transform: rotate(45deg) translateY(1px);
-}
-
-.isola-hamburger.aperto span:last-child {
-    transform: rotate(-45deg) translateY(-1px);
 }
