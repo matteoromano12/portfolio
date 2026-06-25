@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #e8e8e8;
+    min-height: 100vh;
+}
+
+.isola {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 64px;
+    width: 90%;
+    max-width: 660px;
+    margin: 1.5rem auto 0;
+}
+
+.isola-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.isola-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #111;
+    border-radius: 1px;
+}
+
+.isola-nome {
+    font-family: 'Silkscreen', monospace;
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    color: #111;
+}
